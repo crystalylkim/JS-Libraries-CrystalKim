@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Store</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -13,88 +15,71 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
-    <!--THIS LIBRAY IS NOT WORKING -->
-    <script src="https://rishabhp.github.io/bideo.js/dist/bideo.min.js"></script>
 </head>
-<body>.
-    <!-- Header Section -->
-    <header>
-        <h1>Crystal's Furniture</h1>
-        <nav>
-            <a href="#hero"><span class="dot" style="background-color: #ff0000;"></span>Home</a>
-            <a href="#gallery"><span class="dot" style="background-color: #0000ff;"></span>Gallery</a>
-            <a href="#contact-form"><span class="dot" style="background-color: #ffff00;"></span>Contact</a>
-        </nav>
-    </header>
-    
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <video id="my-video" class="video" autoplay muted loop>
-            <source src="assets/funiture_making.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="hero-content">
-            <h2>Welcome</h2>
-            <p>Find your dream furniture to fit your style and comfort!</p>
-        </div>
-    </section>
 
-    <!-- Gallery Section -->
-    <div class="gallery-header">
-        <h2>New Arrivals</h2>
-        <p>Discover our latest custom creations—crafted uniquely to match your vision!</p>
-    </div>
-    <section id="gallery" class="grid">
-        <div class="grid-sizer"></div>
-        <div class="grid-item" data-aos="fade-up">
-            <a href="assets/furniture1.jpg" data-lightbox="gallery"><img src="assets/furniture1.jpg" alt="Furniture 1"></a>
-        </div>
-        <div class="grid-item" data-aos="fade-up">
-            <a href="assets/furniture2.jpg" data-lightbox="gallery"><img src="assets/furniture2.jpg" alt="Furniture 2"></a>
-        </div>
-        <div class="grid-item" data-aos="fade-up">
-            <a href="assets/furniture3.jpg" data-lightbox="gallery"><img src="assets/furniture3.jpg" alt="Furniture 3"></a>
-        </div>
-        <div class="grid-item" data-aos="fade-up">
-            <a href="assets/furniture4.jpg" data-lightbox="gallery"><img src="assets/furniture4.jpg" alt="Furniture 4"></a>
-        </div>
-        <div class="grid-item" data-aos="fade-up">
-            <a href="assets/furniture5.jpg" data-lightbox="gallery"><img src="assets/furniture5.jpg" alt="Furniture 5"></a>
-        </div>
-        <div class="grid-item" data-aos="fade-up">
-            <a href="assets/furniture6.jpg" data-lightbox="gallery"><img src="assets/furniture6.jpg" alt="Furniture 6"></a>
-        </div>
-    </section>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Crystal's Furniture</h1>
+            <nav>
+                <a href="#hero"><i class="fas fa-home" style="color: black"></i> Home</a>
+                <a href="#gallery"><i class="fas fa-images" style="color: black"></i> Gallery</a>
+                <a href="#contact-form"><i class="fas fa-envelope" style="color: black"></i> Contact</a>
+            </nav>
+        </header>
 
-    <!-- Footer Section -->
-    <footer>
-        <!-- Contact Form -->
-        <div id="contact-form">
-            <h2>Contact Us</h2>
-            <p>Please leave your visit date, estimated amount, phone number, and email, and we will get back to you.</p>
-            <div class="container" style="max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9;">
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label for="phone" style="font-weight: bold;">Phone Number:</label>
-                    <input type="text" id="phone" class="input-custom" placeholder="Fill in your phone number" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" />
-                </div>
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label for="email" style="font-weight: bold;">Email:</label>
-                    <input type="email" id="email" class="input-email" placeholder="Enter your email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" />
-                </div>
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label for="visit-date" style="font-weight: bold;">Visit Date:</label>
-                    <input type="text" id="visit-date" class="input-date" placeholder="DD/MM/YYYY" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" />
-                </div>
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label for="estimated-amount" style="font-weight: bold;">Estimated Amount : C$</label>
-                    <input type="text" id="estimated-amount" class="input-numeral" placeholder="Enter amount" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" />
-                </div>
-                <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">
-                    Send
-                </button>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <video id="my-video" class="video" autoplay muted loop>
+                <source src="assets/funiture_making.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h2>Welcome</h2>
+                <p>Find your dream furniture to fit your style and comfort!</p>
             </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <div class="gallery-header">
+            <h2>New Arrivals</h2>
+            <p>Discover our latest custom creations—crafted uniquely to match your vision!</p>
         </div>
-    </footer>
+        <section id="gallery" class="grid">
+            <div class="grid-sizer"></div>
+            <!-- JavaScript will add the remaining grid-item elements -->
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <!-- Contact Form -->
+            <div id="contact-form">
+                <h2>Contact Us</h2>
+                <p>Please leave your visit date, estimated amount, phone number, and email, and we will get back to you.</p>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" class="input-custom" placeholder="Fill in your phone number" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" class="input-email" placeholder="Enter your email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="visit-date">Visit Date:</label>
+                        <input type="text" id="visit-date" class="input-date" placeholder="DD/MM/YYYY" />
+                    </div>
+                    <div class="form-group">
+                        <label for="estimated-amount">Estimated Amount: C$</label>
+                        <input type="text" id="estimated-amount" class="input-numeral" placeholder="Enter amount" />
+                    </div>
+                    <button type="button" class="submit-button" onclick="submitForm()">Send</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/script.js"></script>
 </body>
-<script src="/script.js"></script>
+
 </html>
